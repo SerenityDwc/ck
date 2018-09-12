@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwc.web.study.mapper.psms.USERSMapper" >
+  <resultMap id="BaseResultMap" type="com.dwc.web.study.model.psms.USERS" >
+    <id column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="C_USERNAME" property="cUsername" jdbcType="VARCHAR" />
+    <result column="C_PWD" property="cPwd" jdbcType="VARCHAR" />
+    <result column="C_PHONE" property="cPhone" jdbcType="VARCHAR" />
+    <result column="N_AGE" property="nAge" jdbcType="VARCHAR" />
+    <result column="N_SEX" property="nSex" jdbcType="VARCHAR" />
+    <result column="C_CREATEDATE" property="cCreatedate" jdbcType="VARCHAR" />
+    <result column="N_CREATER" property="nCreater" jdbcType="VARCHAR" />
+    <result column="C_UPDATEDATE" property="cUpdatedate" jdbcType="VARCHAR" />
+    <result column="N_UPDATER" property="nUpdater" jdbcType="VARCHAR" />
+    <result column="N_DELETED" property="nDeleted" jdbcType="VARCHAR" />
+    <result column="N_STATUS" property="nStatus" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, C_USERNAME, C_PWD, C_PHONE, N_AGE, N_SEX, C_CREATEDATE, N_CREATER, C_UPDATEDATE, 
+    N_UPDATER, N_DELETED, N_STATUS
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from USERS
+    where ID = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from USERS
+    where ID = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.dwc.web.study.model.psms.USERS" >
+    insert into USERS (ID, C_USERNAME, C_PWD, 
+      C_PHONE, N_AGE, N_SEX, 
+      C_CREATEDATE, N_CREATER, C_UPDATEDATE, 
+      N_UPDATER, N_DELETED, N_STATUS
+      )
+    values (#{id,jdbcType=VARCHAR}, #{cUsername,jdbcType=VARCHAR}, #{cPwd,jdbcType=VARCHAR}, 
+      #{cPhone,jdbcType=VARCHAR}, #{nAge,jdbcType=VARCHAR}, #{nSex,jdbcType=VARCHAR}, 
+      #{cCreatedate,jdbcType=VARCHAR}, #{nCreater,jdbcType=VARCHAR}, #{cUpdatedate,jdbcType=VARCHAR}, 
+      #{nUpdater,jdbcType=VARCHAR}, #{nDeleted,jdbcType=VARCHAR}, #{nStatus,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dwc.web.study.model.psms.USERS" >
+    insert into USERS
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="cUsername != null" >
+        C_USERNAME,
+      </if>
+      <if test="cPwd != null" >
+        C_PWD,
+      </if>
+      <if test="cPhone != null" >
+        C_PHONE,
+      </if>
+      <if test="nAge != null" >
+        N_AGE,
+      </if>
+      <if test="nSex != null" >
+        N_SEX,
+      </if>
+      <if test="cCreatedate != null" >
+        C_CREATEDATE,
+      </if>
+      <if test="nCreater != null" >
+        N_CREATER,
+      </if>
+      <if test="cUpdatedate != null" >
+        C_UPDATEDATE,
+      </if>
+      <if test="nUpdater != null" >
+        N_UPDATER,
+      </if>
+      <if test="nDeleted != null" >
+        N_DELETED,
+      </if>
+      <if test="nStatus != null" >
+        N_STATUS,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="cUsername != null" >
+        #{cUsername,jdbcType=VARCHAR},
+      </if>
+      <if test="cPwd != null" >
+        #{cPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="cPhone != null" >
+        #{cPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="nAge != null" >
+        #{nAge,jdbcType=VARCHAR},
+      </if>
+      <if test="nSex != null" >
+        #{nSex,jdbcType=VARCHAR},
+      </if>
+      <if test="cCreatedate != null" >
+        #{cCreatedate,jdbcType=VARCHAR},
+      </if>
+      <if test="nCreater != null" >
+        #{nCreater,jdbcType=VARCHAR},
+      </if>
+      <if test="cUpdatedate != null" >
+        #{cUpdatedate,jdbcType=VARCHAR},
+      </if>
+      <if test="nUpdater != null" >
+        #{nUpdater,jdbcType=VARCHAR},
+      </if>
+      <if test="nDeleted != null" >
+        #{nDeleted,jdbcType=VARCHAR},
+      </if>
+      <if test="nStatus != null" >
+        #{nStatus,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dwc.web.study.model.psms.USERS" >
+    update USERS
+    <set >
+      <if test="cUsername != null" >
+        C_USERNAME = #{cUsername,jdbcType=VARCHAR},
+      </if>
+      <if test="cPwd != null" >
+        C_PWD = #{cPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="cPhone != null" >
+        C_PHONE = #{cPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="nAge != null" >
+        N_AGE = #{nAge,jdbcType=VARCHAR},
+      </if>
+      <if test="nSex != null" >
+        N_SEX = #{nSex,jdbcType=VARCHAR},
+      </if>
+      <if test="cCreatedate != null" >
+        C_CREATEDATE = #{cCreatedate,jdbcType=VARCHAR},
+      </if>
+      <if test="nCreater != null" >
+        N_CREATER = #{nCreater,jdbcType=VARCHAR},
+      </if>
+      <if test="cUpdatedate != null" >
+        C_UPDATEDATE = #{cUpdatedate,jdbcType=VARCHAR},
+      </if>
+      <if test="nUpdater != null" >
+        N_UPDATER = #{nUpdater,jdbcType=VARCHAR},
+      </if>
+      <if test="nDeleted != null" >
+        N_DELETED = #{nDeleted,jdbcType=VARCHAR},
+      </if>
+      <if test="nStatus != null" >
+        N_STATUS = #{nStatus,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dwc.web.study.model.psms.USERS" >
+    update USERS
+    set C_USERNAME = #{cUsername,jdbcType=VARCHAR},
+      C_PWD = #{cPwd,jdbcType=VARCHAR},
+      C_PHONE = #{cPhone,jdbcType=VARCHAR},
+      N_AGE = #{nAge,jdbcType=VARCHAR},
+      N_SEX = #{nSex,jdbcType=VARCHAR},
+      C_CREATEDATE = #{cCreatedate,jdbcType=VARCHAR},
+      N_CREATER = #{nCreater,jdbcType=VARCHAR},
+      C_UPDATEDATE = #{cUpdatedate,jdbcType=VARCHAR},
+      N_UPDATER = #{nUpdater,jdbcType=VARCHAR},
+      N_DELETED = #{nDeleted,jdbcType=VARCHAR},
+      N_STATUS = #{nStatus,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="findByName" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from USERS
+    where  C_USERNAME= #{name ,jdbcType=VARCHAR}
+  </select>
+</mapper>

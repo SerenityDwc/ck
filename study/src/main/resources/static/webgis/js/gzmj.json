@@ -1,0 +1,57 @@
+{
+  "code":200,
+  "message":"请求返回正常",
+  "data":{
+    "pageNum":1,
+    "pageSize": 10,
+    "size":1,
+    "startRow": 1,
+    "endRow":1,
+    "total":1,
+    "apges":1,
+    "list": [
+      {
+        "jgbm":'320516000010',
+        "jgmc":"相城大队",
+        "mjjh":"1111",
+        "mjxm":"张三",
+        "zf":22,
+        "sg":"3",
+        "jcj":"2",
+        "area":22
+      },
+      {
+        "jgbm":'320516000010',
+        "jgmc":"吴中大队",
+        "mjjh":"2222",
+        "mjxm":"赵辒",
+        "zf":22,
+        "sg":38,
+        "jcj":22,
+        "area":22
+      },
+      {
+        "jgbm":'320516000010',
+        "jgmc":"姑苏大队",
+        "mjjh":"3333",
+        "mjxm":"李濡",
+        "zf":22,
+        "sg":4,
+        "jcj":5,
+        "area":22
+      }
+    ],
+    "prePage":0,
+    "nextPage":0,
+    "isFirstPage":true,
+    "isLastPage":true,
+    "hasPreviousPage":false,
+    "hasNextPage":false,
+    "navigatePages":8,
+    "navigatepageNums":[1],
+    "navigateFirstPage":1,
+    "navigateLastPage":1,
+    "firstPage":1,
+    "lastPage":1
+  }
+}

@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+}
+
+.main_left {
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+
+.main_right {
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+}
+
+.rmenu {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    text-align: left;
+}
+
+.rmenu a {
+    cursor: pointer;
+    list-style: none outside none;
+}
+
+.footer{
+    padding: 2.5px;
+    height: 20px;
+    background-color: #2196F3;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.ztree{
+    height: calc(100vh - 150px);
+}

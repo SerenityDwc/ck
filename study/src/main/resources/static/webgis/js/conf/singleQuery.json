@@ -1,0 +1,13 @@
+{
+  "serviceUrl": "",
+  "isPoiSearchEnable": false,
+  "isRouteSearchEnable": false,
+  "queryType": "1",
+  "callback": null,
+  "displayKeyLabel": {
+    "name": "未知",
+    "address": "未知",
+    "categoryName": "未知",
+    "regionName": "未知"
+  }
+}

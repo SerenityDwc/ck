@@ -1,0 +1,30 @@
+spring:
+  datasource:
+      #多数据源配置
+      druid:
+        base:
+          url: jdbc:oracle:thin:@localhost:1521:xe
+          username: psms
+          password: cyber
+          driverClassName: oracle.jdbc.OracleDriver
+        activiti:
+          url: jdbc:oracle:thin:@localhost:1521:xe
+          username: activiti
+          password: cyber
+          driverClassName: oracle.jdbc.OracleDriver
+        workplan:
+          url: jdbc:oracle:thin:@localhost:1521:xe
+          username: QW
+          password: cyber
+          driverClassName: oracle.jdbc.OracleDriver
+
+
+
+
+
+
+
+
+
+
+

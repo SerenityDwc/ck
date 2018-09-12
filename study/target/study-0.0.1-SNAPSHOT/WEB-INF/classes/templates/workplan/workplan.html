@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>工作排班首页</title>
+    <link th:href="@{/bootstrap/theme/materia/bootstrap.min.css}"
+          href="../../static/bootstrap/theme/materia/bootstrap.min.css" rel="stylesheet"/>
+    <link th:href="@{/bootstrap/plugin/table/bootstrap-table.min.css}"
+          href="../../static/bootstrap/plugin/table/bootstrap-table.min.css" rel="stylesheet"/>
+    <link th:href="@{/ztree/css/metroStyle/metroStyle.css}" href="../../static/ztree/css/metroStyle/metroStyle.css"
+          rel="stylesheet"/>
+    <link th:href="@{/layui/css/layui.css}" href="../../static/layui/css/layui.css" rel="stylesheet"/>
+
+    <link th:href="@{/css/workplan/index.css}" href="../../static/css/workplan/index.css" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">工作排班首页</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+
+        <input id="userType" type="hidden"/>
+        <a href="javascript:void(0);" onclick="javascript:toggleUserType();"><span id="userTypeName" class="layui-badge">民警</span></a>
+    </div>
+</nav>
+
+<div class="main">
+    <div class="main_left">
+        <ul id="watcherList" class="ztree" style="width:100%;overflow:auto;"></ul>
+    </div>
+    <div class="main_right">
+
+        <div id="toolbar" class="mb-5 mt-3">
+
+            <div class="row">
+                <div class="col-3" id="jg">
+                    <input type="hidden" class="form-control" id="jgbm"/>
+                    <input type="text" class="form-control" placeholder="请左侧选择部门" id="jgmc" disabled readonly/>
+                    <small class="text-muted text-danger">
+                        &nbsp;&nbsp;<--机构选择左边进行选择.
+                    </small>
+                </div>
+                <div class="col-3 d-none" id="mj">
+                    <input type="hidden" class="form-control" id="mjjh"/>
+                    <input type="text" class="form-control" placeholder="请左侧选择民警" id="mjxm"/>
+                </div>
+                <div class="col-3">
+                    <input  id="timeBegin" type="hidden"/>
+                    <input  id="timeEnd" type="hidden"/>
+                    <input type="text" class="form-control" placeholder="请选择时间" id="timeRange"/>
+                </div>
+                <div class="col-6" style="display: flex;flex-direction: row-reverse">
+                    <div style="display: flex;flex-direction: row;justify-content: space-around">
+                        <button class="layui-btn layui-btn-normal" id="search">查询</button>
+                        <button class="layui-btn layui-btn-warm d-none" id="export">数据导出</button>
+                    </div>
+                </div>
+            </div>
+
+            <input name="departId" id="departId" type="hidden"/>
+            <input name="departName" id="departName" type="hidden"/>
+            <input name="userId" id="userId" type="hidden"/>
+            <input name="userName" id="userName" type="hidden"/>
+        </div>
+
+        <table id="table" >
+        </table>
+
+    </div>
+</div>
+
+<div th:include="layout/footer :: copy" class="fixed-bottom text-center footer">
+    <p style="line-height: 15px;">版权所有 © 苏州广立信息技术有限公司 @Author LancCJ</p>
+</div>
+
+<!--右键父节点-->
+<div id="rPMenu" class="rmenu">
+    <a href="javascript:void(0);" onclick="javascript:goWorkPlan();" class="list-group-item">周排班</a>
+</div>
+
+<!--右键子节点-->
+<div id="rCMenu" class="rmenu">
+    <a href="javascript:void(0);" class="list-group-item" onclick="javascript:void(0);">排班明细</a>
+</div>
+
+<!--thymeleaf写法接收controller传过来的参数-->
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    var departId=/*[[${departId}]]*/;
+    var departName=/*[[${departName}]]*/;
+    var userType=/*[[${userType}]]*/;
+    var submitUser=/*[[${submitUser}]]*/;
+    /*]]>*/
+</script>
+
+<script th:src="@{/fullcalendar/3.8/lib/jquery.min.js}" src="../../static/fullcalendar/3.8/lib/jquery.min.js"></script>
+<script th:src="@{/fullcalendar/3.8/lib/moment.min.js}" src="../../static/fullcalendar/3.8/lib/moment.min.js"></script>
+<script th:src="@{/bootstrap/js/bootstrap.min.js}" src="../../static/bootstrap/js/bootstrap.min.js"></script>
+<script th:src="@{/bootstrap/plugin/table/bootstrap-table.min.js}"
+        src="../../static/bootstrap/plugin/table/bootstrap-table.min.js"></script>
+<script th:src="@{/bootstrap/plugin/table/locale/bootstrap-table-zh-CN.min.js}"
+        src="../../static/bootstrap/plugin/table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script th:src="@{/bootstrap/plugin/table/extensions/export/bootstrap-table-export.min.js}"
+        src="../../static/bootstrap/plugin/table/extensions/export/bootstrap-table-export.min.js"></script>
+<script th:src="@{/ztree/js/jquery.ztree.all.min.js}" src="../../static/ztree/js/jquery.ztree.all.min.js"></script>
+<script th:src="@{/layui/layui.all.js}" src="../../static/layui/layui.all.js"></script>
+<script th:src="@{/layer/layer.js}" src="../../static/layer/layer.js"></script>
+<script th:src="@{/js/app.js}" src="../../static/js/app.js"></script>
+<script th:src="@{/js/util.js}" src="../../static/js/util.js"></script>
+<script th:src="@{/js/trans.js}" src="../../static/js/trans.js"></script>
+
+<script th:src="@{/js/index.js}" src="../../static/js/index.js"></script>
+
+</body>
+</html>

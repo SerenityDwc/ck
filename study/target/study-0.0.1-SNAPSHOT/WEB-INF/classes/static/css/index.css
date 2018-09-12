@@ -1,0 +1,20 @@
+.card{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    border-width: 2px;
+    border-color: #2196F3;
+
+
+
+
+}
+.card:hover img{
+    transform: scale(0.95);
+}
+.card img{
+    transition: all .4s ease-in-out;
+}
+
+

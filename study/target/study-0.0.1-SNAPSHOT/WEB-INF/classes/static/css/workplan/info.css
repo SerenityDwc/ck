@@ -1,0 +1,25 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.condition{
+
+}
+
+.toolbar{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.toolbar_left{
+
+}
+
+.toolbar_tight{
+
+}

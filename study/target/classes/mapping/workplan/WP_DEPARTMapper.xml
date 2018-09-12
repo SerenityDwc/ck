@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dwc.web.study.mapper.workplan.WP_DEPARTMapper">
+
+  <resultMap id="BaseResultMap" type="com.dwc.web.study.model.workplan.WP_DEPART">
+    <result column="JGBM" jdbcType="VARCHAR" property="jgbm" />
+    <result column="JGMC" jdbcType="VARCHAR" property="jgmc" />
+    <result column="JGJC" jdbcType="VARCHAR" property="jgjc" />
+    <result column="PXYJ" jdbcType="VARCHAR" property="pxyj" />
+    <result column="SJJGBM" jdbcType="VARCHAR" property="sjjgbm" />
+    <result column="ISPARENT" jdbcType="VARCHAR" property="isparent" />
+  </resultMap>
+  <insert id="insert" parameterType="com.dwc.web.study.model.workplan.WP_DEPART">
+    insert into WP_DEPART (JGBM, JGMC, JGJC,
+      PXYJ, JGLB, BMLB, UPPER_JGBM,
+      NBBM, JWZHJGBM, JZLB,
+      YNBM, JJDWMC, BMLX,
+      ID, SJJGBM, GAJGBM,
+      DUTY_CONST, DELETED, APPROVAL
+      )
+    values (#{jgbm,jdbcType=VARCHAR}, #{jgmc,jdbcType=VARCHAR}, #{jgjc,jdbcType=VARCHAR},
+      #{pxyj,jdbcType=VARCHAR}, #{jglb,jdbcType=VARCHAR}, #{bmlb,jdbcType=VARCHAR}, #{upperJgbm,jdbcType=VARCHAR},
+      #{nbbm,jdbcType=VARCHAR}, #{jwzhjgbm,jdbcType=VARCHAR}, #{jzlb,jdbcType=VARCHAR},
+      #{ynbm,jdbcType=VARCHAR}, #{jjdwmc,jdbcType=VARCHAR}, #{bmlx,jdbcType=VARCHAR},
+      #{id,jdbcType=DECIMAL}, #{sjjgbm,jdbcType=VARCHAR}, #{gajgbm,jdbcType=VARCHAR},
+      #{dutyConst,jdbcType=CHAR}, #{deleted,jdbcType=CHAR}, #{approval,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dwc.web.study.model.workplan.WP_DEPART">
+    insert into WP_DEPART
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="jgbm != null">
+        JGBM,
+      </if>
+      <if test="jgmc != null">
+        JGMC,
+      </if>
+      <if test="jgjc != null">
+        JGJC,
+      </if>
+      <if test="pxyj != null">
+        PXYJ,
+      </if>
+      <if test="jglb != null">
+        JGLB,
+      </if>
+      <if test="bmlb != null">
+        BMLB,
+      </if>
+      <if test="upperJgbm != null">
+        UPPER_JGBM,
+      </if>
+      <if test="nbbm != null">
+        NBBM,
+      </if>
+      <if test="jwzhjgbm != null">
+        JWZHJGBM,
+      </if>
+      <if test="jzlb != null">
+        JZLB,
+      </if>
+      <if test="ynbm != null">
+        YNBM,
+      </if>
+      <if test="jjdwmc != null">
+        JJDWMC,
+      </if>
+      <if test="bmlx != null">
+        BMLX,
+      </if>
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="sjjgbm != null">
+        SJJGBM,
+      </if>
+      <if test="gajgbm != null">
+        GAJGBM,
+      </if>
+      <if test="dutyConst != null">
+        DUTY_CONST,
+      </if>
+      <if test="deleted != null">
+        DELETED,
+      </if>
+      <if test="approval != null">
+        APPROVAL,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="jgbm != null">
+        #{jgbm,jdbcType=VARCHAR},
+      </if>
+      <if test="jgmc != null">
+        #{jgmc,jdbcType=VARCHAR},
+      </if>
+      <if test="jgjc != null">
+        #{jgjc,jdbcType=VARCHAR},
+      </if>
+      <if test="pxyj != null">
+        #{pxyj,jdbcType=VARCHAR},
+      </if>
+      <if test="jglb != null">
+        #{jglb,jdbcType=VARCHAR},
+      </if>
+      <if test="bmlb != null">
+        #{bmlb,jdbcType=VARCHAR},
+      </if>
+      <if test="upperJgbm != null">
+        #{upperJgbm,jdbcType=VARCHAR},
+      </if>
+      <if test="nbbm != null">
+        #{nbbm,jdbcType=VARCHAR},
+      </if>
+      <if test="jwzhjgbm != null">
+        #{jwzhjgbm,jdbcType=VARCHAR},
+      </if>
+      <if test="jzlb != null">
+        #{jzlb,jdbcType=VARCHAR},
+      </if>
+      <if test="ynbm != null">
+        #{ynbm,jdbcType=VARCHAR},
+      </if>
+      <if test="jjdwmc != null">
+        #{jjdwmc,jdbcType=VARCHAR},
+      </if>
+      <if test="bmlx != null">
+        #{bmlx,jdbcType=VARCHAR},
+      </if>
+      <if test="id != null">
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="sjjgbm != null">
+        #{sjjgbm,jdbcType=VARCHAR},
+      </if>
+      <if test="gajgbm != null">
+        #{gajgbm,jdbcType=VARCHAR},
+      </if>
+      <if test="dutyConst != null">
+        #{dutyConst,jdbcType=CHAR},
+      </if>
+      <if test="deleted != null">
+        #{deleted,jdbcType=CHAR},
+      </if>
+      <if test="approval != null">
+        #{approval,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+
+
+  <select id="findDepartByDepartId" resultMap="BaseResultMap">
+    <![CDATA[
+        select t.jgbm,t.jgmc,t.jgjc,t.pxyj,t.sjjgbm,
+            case
+               when (select count(*) from  wp_depart   connect by  prior JGBM=SJJGBM start with JGBM=t.JGBM) >0 then 'true'
+               when (select count(*) from  wp_user  where depart_id = t.JGBM) >0 then 'true'
+               else 'false'
+
+            end ISPARENT
+            from  wp_depart  t where t.yxdw ='1' and  t.SJJGBM=#{departId} or t.jgbm=#{departId} connect by  prior t.JGBM=t.SJJGBM start with t.JGBM=#{departId} order by to_number(t.pxyj) asc
+
+
+      ]]>
+  </select>
+
+
+    <select id="findDepartByDepartIdWithOutRoot" resultMap="BaseResultMap">
+        <![CDATA[
+        select t.jgbm,t.jgmc,t.jgjc,t.pxyj,t.sjjgbm,
+            case
+               when (select count(*)  from  wp_depart   connect by  SJJGBM=JGBM start with SJJGBM=t.JGBM) >0 then 'true'
+               when (select count(*) from  wp_user  where depart_id = t.JGBM) >0 then 'true'
+
+               else 'false'
+
+            end ISPARENT
+            from  wp_depart  t where t.yxdw ='1' connect by  SJJGBM=JGBM start with SJJGBM=#{departId}
+             order by to_number(t.pxyj) asc
+
+
+      ]]>
+    </select>
+
+  <select id="findDepartByDepartIdZrq" resultMap="BaseResultMap">
+    <![CDATA[
+        select t.jgbm,t.jgmc,t.jgjc,t.pxyj,t.sjjgbm,
+            case
+               when (select count(*) from  wp_depart   connect by  prior JGBM=SJJGBM start with JGBM=t.JGBM) >0 then 'true'
+               when (select count(*) from  WP_WORK_AREA  where owner = t.JGBM) >0 then 'true'
+               else 'false'
+
+            end ISPARENT
+            from  wp_depart  t where t.yxdw ='1' and  t.SJJGBM=#{departId} or t.jgbm=#{departId} connect by  prior t.JGBM=t.SJJGBM start with t.JGBM=#{departId} order by to_number(t.pxyj) asc
+
+
+      ]]>
+  </select>
+
+
+  <select id="findDepartByDepartIdWithOutRootZrq" resultMap="BaseResultMap">
+        <![CDATA[
+        select t.jgbm,t.jgmc,t.jgjc,t.pxyj,t.sjjgbm,
+            case
+               when (select count(*)  from  wp_depart   connect by  SJJGBM=JGBM start with SJJGBM=t.JGBM) >0 then 'true'
+               when (select count(*) from  WP_WORK_AREA  where owner = t.JGBM) >0 then 'true'
+
+               else 'false'
+
+            end ISPARENT
+            from  wp_depart  t where t.yxdw ='1' connect by  SJJGBM=JGBM start with SJJGBM=#{departId}
+             order by to_number(t.pxyj) asc
+
+
+      ]]>
+    </select>
+
+
+  <select id="findParentDepart" resultMap="BaseResultMap">
+    select * from wp_depart where jgbm = #{departId}
+  </select>
+
+
+
+
+</mapper>

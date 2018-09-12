@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>请假单新增</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script th:src="@{/js/app.js}" src="../../../static/js/app.js"></script>
+
+    <link th:href="@{/layui/css/layui.css}" href="../../../static/layui/css/layui.css" rel="stylesheet"/>
+
+    <link th:href="@{/css/workplan/position-add.css}" href="../../../static/css/workplan/position-add.css" rel="stylesheet"/>
+
+    <script type="text/javascript">
+        document.write('<link rel="stylesheet" href="'+app.map.shuzi.baseCss+'" />');
+        document.write('<scr'+'ipt type="text/javascript" src="'+app.map.shuzi.baseJs+'"></scr'+'ipt>');
+    </script>
+
+
+    <style>
+        .mapLabel{
+            border-width: 0;
+            margin:0;
+            padding:0;
+            opacity: 0.5;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="main col-12">
+    <div class="right">
+        <div class="container">
+            <div class="center">
+                <form class="layui-form" style="padding: 20px;" id="form">
+                    <!--<div class="layui-form-item">-->
+                        <!--<div class="layui-inline">-->
+                            <!--<label class="layui-form-label">岗位类型</label>-->
+                            <!--<div class="layui-input-inline">-->
+                                <!--<input name="areaType" id="areaType" type="hidden"/>-->
+                                <!--<input name="areaStr" id="areaStr" type="hidden"/>-->
+                                <!--<select lay-verify="required" lay-search="" lay-filter="areaType" id="select-areaType">-->
+                                    <!--<option value="">直接选择或搜索选择</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">请假原因</label>
+                        <div class="layui-input-inline">
+                            <textarea name="qjyy" id="qjyy" lay-verify="title" autocomplete="off" placeholder="请输入请假原因"
+                                      class="layui-textarea" type="text"></textarea>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="footer">
+                <div class="footer-btn">
+                    <button class="layui-btn layui-btn-normal" id="btn-add">新增</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/jquery/3.2.1/jquery.min.js}" src="../../../static/jquery/3.2.1/jquery.min.js"></script>
+<script th:src="@{/layui/layui.all.js}" src="../../../static/layui/layui.all.js"></script>
+<script th:src="@{/layer/layer.js}" src="../../../static/layer/layer.js"></script>
+<script th:src="@{/js/util.js}" src="../../../static/js/util.js"></script>
+<script th:src="@{/js/trans.js}" src="../../../static/js/trans.js"></script>
+<script th:src="@{/js/workplan/position-add.js}" src="../../../static/js/workplan/position-add.js"></script>
+
+</body>
+</html>

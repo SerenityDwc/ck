@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwc.web.study.mapper.activiti.TB_QJMapper" >
+  <resultMap id="BaseResultMap" type="com.dwc.web.study.model.activiti.TB_QJ" >
+    <id column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="QJR" property="qjr" jdbcType="VARCHAR" />
+    <result column="QJSJ" property="qjsj" jdbcType="VARCHAR" />
+    <result column="QJYY" property="qjyy" jdbcType="VARCHAR" />
+    <result column="QJTS" property="qjts" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, QJR, QJSJ,QJYY,QJTS
+  </sql>
+  <select id="findQjlb" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id,qjr,qjsj,qjyy,qjts
+    from TB_QJ
+  </select>
+</mapper>

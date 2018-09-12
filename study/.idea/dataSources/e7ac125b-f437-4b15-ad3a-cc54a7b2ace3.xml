@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.10">
+    <root id="1">
+      <ServerVersion>11.2.0.2</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="QW">
+      <ObjectId>53</ObjectId>
+      <IntrospectionTimestamp>2018-08-26.00:10:58</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-08-24.17:30:55</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-26.00:10:33</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="CTXSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="XDB">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="ANONYMOUS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="MDSYS">
+      <ObjectId>42</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="HR">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="FLOWS_FILES">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="APEX_040000">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="PSMS">
+      <ObjectId>48</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="ACTIVITI">
+      <ObjectId>49</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="qw">
+      <ObjectId>52</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <table id="19" parent="2" name="WP_DEPART">
+      <ObjectId>21028</ObjectId>
+      <CreatedTimestamp>2018-08-24.17:30:55</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-26.00:08:50</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="20" parent="2" name="WP_USER">
+      <ObjectId>21029</ObjectId>
+      <CreatedTimestamp>2018-08-24.17:33:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-26.00:10:33</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="21" parent="19" name="JGBM">
+      <Position>1</Position>
+      <DataType>VARCHAR2(32 byte)|0s</DataType>
+    </column>
+    <column id="22" parent="19" name="JGMC">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="23" parent="19" name="JGJC">
+      <Position>3</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="24" parent="19" name="PXYJ">
+      <Position>4</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="25" parent="19" name="SJJGBM">
+      <Position>5</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="26" parent="19" name="ISPARENT">
+      <Position>6</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="27" parent="19" name="YXDW">
+      <Position>7</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="28" parent="19" name="ZQMJSL">
+      <Position>8</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="29" parent="20" name="USER_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="30" parent="20" name="USER_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="31" parent="20" name="DEPART_ID">
+      <Position>3</Position>
+      <DataType>VARCHAR2(110 byte)|0s</DataType>
+    </column>
+    <column id="32" parent="20" name="DEPART_NAME">
+      <Position>4</Position>
+      <DataType>VARCHAR2(110 byte)|0s</DataType>
+    </column>
+    <column id="33" parent="20" name="USER_TYPE">
+      <Position>5</Position>
+      <DataType>VARCHAR2(110 byte)|0s</DataType>
+    </column>
+    <column id="34" parent="20" name="USER_POSITION">
+      <Position>6</Position>
+      <DataType>VARCHAR2(110 byte)|0s</DataType>
+    </column>
+    <column id="35" parent="20" name="USER_AVATAR">
+      <Position>7</Position>
+      <DataType>VARCHAR2(110 byte)|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>

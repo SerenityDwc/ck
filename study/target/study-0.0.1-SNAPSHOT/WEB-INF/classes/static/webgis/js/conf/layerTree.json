@@ -1,0 +1,25 @@
+{
+  "layerInfo": {
+    "default": {
+      "interval": 60000,
+      "autoRefresh": true,
+      "state": "cluster",
+      "displayKeyLabel": {
+        "name": "未知",
+        "address": "未知",
+        "categoryName": "未知",
+        "regionName": "未知"
+      },
+      "clusterOptions": {
+      },
+      "callback": null
+    }
+  },
+  "staticService": [
+    {
+      "serviceName": "service",
+      "serviceUrl": "http://192.168.3.209:8399/arcgis/rest/services/framework/MapServer"
+    }
+  ],
+  "exclude": []
+}

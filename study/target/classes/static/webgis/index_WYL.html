@@ -1,0 +1,144 @@
+﻿<html>
+    <head>
+    <title>苏州市交警勤务平台</title>
+    <link href="http://50.73.66.8/PGIS_S_TileMapServer/client/css/EzServer.css" type="text/css" rel="stylesheet">
+    <link href="./js/bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="./js/daterangepicker/daterangepicker.css" type="text/css" rel="stylesheet">
+    <link href="./js/ztree/css/metroStyle/metroStyle.css" type="text/css" rel="stylesheet">
+    <link href="./js/toastr/toastr.min.css" type="text/css" rel="stylesheet">
+    <link href="./css/index_black.css" type="text/css" rel="stylesheet">
+    <link href="./css/map.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <input type="hidden" value="#0c3c54" id="highChartsBackgroundColor"/>
+    <input type="hidden" value="white" id="ztreeFontColor"/>
+    <div id="map"></div>
+    <div id="left-panel">
+        <!-- 搜索框 -->
+        <div id="searchbox" class="clearfix">
+            <div id="searchbox-container">
+                <!-- 搜民警、查轨迹、查处罚 -->
+                <div id="sole-searchbox-content" class="searchbox-content">
+                    <input id="sole-input" class="searchbox-content-common" type="text" name="word" autocomplete="off"
+                           maxlength="256" placeholder="请输入........">
+                    <div class="input-clear" title="清空" style="display: none;"></div>
+                    <!-- 隐藏显示-->
+                    <div id="searchbox_hidden" class="searchbox-content-button right-button route-button" data-title="显示/隐藏"
+                         data-tooltip="2"></div>
+                </div>
+            </div>
+            <button id="search-button" data-title="搜索" data-tooltip="1" onclick="searchDPoint();"></button>
+            <!-- 搜索框下方提示語框 -->
+            <div id="toast-wrapper" class="">
+                <div id="toast" class="warning">
+                    <img class="info-tip-img" src="./image/transparent.gif" alt>
+                    <span class="info-tip-text"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 显示实时在线民警数量 -->
+        <ul id="cards-level0" class="cardlist">
+            <li class='card animate-card' style="z-index:100;max-height: 290px;">
+                <div id="zxmjcntDiv" style="width:355px;height:160px;">
+                </div>
+            </li>
+        </ul>
+        <ul id="cards-level1" class="cardlist" style="z-index:100;max-height: 290px;">
+            <li class='card animate-card' style="z-index:100;max-height: 270px;">
+                <div id="mjcntDiv" style="width:355px;height:190px;">
+                    <div class="container-fluid">
+                        <div class="row">
+                                <div class="col-sm-6">
+                                    <blockquote style="border-bottom:5px solid red;border-left:0px;margin-bottom: 0px;color: white;padding-bottom: 0px;padding-left: 0px;">
+                                    <span>关注民警工作量</span>
+                                    </blockquote>
+                                </div>
+                                <div class="col-sm-6"></div>
+                        </div>
+                        <div class="row" style="padding-left:14px;padding-right:14px;">
+                            <table class="table table-condensed">
+                                <thead style="overflow-y:scroll;"><tr><th>单位</th><th>民警姓名</th><th>执法</th><th>事故</th><th>接警</th><th>责任区</th></tr></thead>
+                                <tbody id="gzmjGzl"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!--<ul id="cards-level2" class="cardlist" style="display: none;">
+            <li class='card animate-card' style="z-index:100;max-height: 310px;">
+
+            </li>
+        </ul>-->
+        <!--<ul id="cards-level4" class="cardlist" style="display: none;">
+            <li class='card animate-card' style="z-index:100;max-height: 310px;">
+
+            </li>
+        </ul>-->
+    </div>
+    <div id="middle-panel" class="middle-panel"><img src="./image/black/head_title.png"></div>
+    <div id="app-right-top">
+        <div id="tool-container" class="toolscontainer">
+            <div class="ui3-control-wrap clearfixs" id="ui3_control_wrap">
+                <!-- 工具栏（机构、执法、轨迹） -->
+                <div class="left float-1">
+                    <div class="boxopt" map-on-click="box" id="box_dept">
+                        <span class="boxutils boxicon"></span>
+                    </div>
+                    <div class="boxopt" map-on-click="box" id="box_layer">
+                        <span class="boxutils boxicon"></span>
+                    </div>
+                    <div class="boxopt" map-on-click="box" id="box_tool">
+                        <span class="boxutils boxicon"></span>
+                    </div>
+                    <div class="boxopt" map-on-click="box" id="box_duty">
+                        <span class="boxutils boxicon"></span>
+                    </div>
+                    <div class="detail-box" style="display: none;">
+                        <ul class="boxinfo">
+                            <li class="map-measure" map-on-click="measure" id="box_gj">
+                                <span class="last measure"></span>
+                            </li>
+                            <li class="map-mark" id="box_zf">
+                                <span class="last mark"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- toolbar下面的查询框 -->
+                <div class="map_popup" id="map_popup" style="display: none;">
+                    <div class="popup_main">
+
+                    </div>
+                </div>
+                <div class="map_popup_small_x_2" id="map_popup_2" style="display: none;">
+                    <div class="popup_main_2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="leaflet-bottom leaflet-right">
+        <div class="leaflet-control basemaps basemaps-open">
+            <div class="basemap" onclick="window.location.href='index.html'">
+                <img class="" src="./image/black/button.png" alt="矢量图"><span style="position: absolute;top: 15px;color: #26a7d0;letter-spacing:5px;left: 15%;">矢量图</span></div>
+            <div class="basemap" onclick="window.location.href='index_WYL.html'">
+                <img class="" src="./image/black/button_enable.png" alt="反色图"><div style="position: absolute;top: 15px;color: #26a7d0;letter-spacing:5px;right: 15%;">反色图</div></div>
+        </div>
+    </div>
+</body>
+
+    <script type="text/javascript" src="http://50.73.66.8:7003/PGIS_S_TileMapServer_WYL/Maps/default/js/EzMapAPI.jsp"></script>
+    <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="./js/daterangepicker/daterangepicker.js"></script>
+    <script type="text/javascript" src="./js/ztree/js/jquery.ztree.all-3.5.js"></script>
+    <script type="text/javascript" src="./js/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="./js/highcharts/4.1.7/highcharts.js"></script>
+    <script type="text/javascript" src="./js/police.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/webgis.js"></script>
+</html>

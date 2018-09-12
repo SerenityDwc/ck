@@ -1,0 +1,59 @@
+####编码路径Thymeleaf设置
+spring:
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  messages:
+    encoding: utf-8
+  thymeleaf:
+    encoding: utf-8
+    cache: false
+    mode: LEGACYHTML5
+  datasource:
+    #多数据源配置
+    druid:
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1 from dual
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      useGlobalDataSourceStat: true
+      aop-patterns: packages
+  activiti:
+    check-process-definitions: false
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+mybatis:
+  configuration:
+    call-setters-on-nulls: true
+#pagehelper分页插件
+pagehelper:
+  helperDialect: oracle
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+server:
+  port: 8088
+  servlet:
+    context-path: "/study"
+
+
+
+
+
+
+

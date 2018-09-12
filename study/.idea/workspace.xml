@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="study:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1766f2c-d81a-4dc6-97df-28b627d58524" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/demo/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="96553060">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="37" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="6" />
+          <entry key="project.open.time.11" value="8" />
+          <entry key="project.open.time.12" value="3" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="37" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="MD" value="2" />
+          <entry key="bpmn" value="32" />
+          <entry key="class" value="15" />
+          <entry key="css" value="3" />
+          <entry key="fxml" value="1" />
+          <entry key="html" value="51" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="297" />
+          <entry key="js" value="19" />
+          <entry key="png" value="5" />
+          <entry key="properties" value="2" />
+          <entry key="sql" value="4" />
+          <entry key="ts" value="1" />
+          <entry key="xml" value="49" />
+          <entry key="yml" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="BPMN_EDITOR" value="31" />
+          <entry key="CLASS" value="15" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="51" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Image" value="5" />
+          <entry key="JAVA" value="297" />
+          <entry key="JavaScript" value="19" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="2" />
+          <entry key="Scratch" value="4" />
+          <entry key="TypeScript" value="1" />
+          <entry key="UML" value="2" />
+          <entry key="XML" value="48" />
+          <entry key="YAML" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="MD" value="68" />
+          <entry key="css" value="5" />
+          <entry key="dummy" value="26" />
+          <entry key="html" value="499" />
+          <entry key="java" value="3349" />
+          <entry key="js" value="493" />
+          <entry key="sql" value="17" />
+          <entry key="xml" value="483" />
+          <entry key="yml" value="179" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="5" />
+          <entry key="HTML" value="499" />
+          <entry key="JAVA" value="3349" />
+          <entry key="JavaScript" value="493" />
+          <entry key="Markdown" value="68" />
+          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="Scratch" value="17" />
+          <entry key="XML" value="483" />
+          <entry key="YAML" value="179" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="study" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/kafka/KafkaSender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/kafka/KafkaReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/StudyApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="BpmnFile" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SYS_ROLES</find>
+      <find>SYS_ROLESMapper</find>
+      <find>SYS_PERMISSION</find>
+      <find>SYS_PERMISSIONMapper</find>
+      <find>updateByPrimaryKey</find>
+      <find>findByName</find>
+      <find>UsersInterface</find>
+      <find>main.java</find>
+      <find>main.java.</find>
+      <find>BaseResultMap</find>
+      <find>swagger2</find>
+      <find>thyme</find>
+      <find>services</find>
+      <find>MAPPER_LOCATION</find>
+      <find>findDepartByDepartId</find>
+      <find>duty</find>
+      <find>col-6</find>
+      <find>pagehelper</find>
+      <find>userType</find>
+      <find>export</find>
+      <find>layer</find>
+      <find>delete</find>
+      <find>activiti</find>
+      <find>tomcat</find>
+      <find>HashMap</find>
+      <find>putVal</find>
+      <find>devtools</find>
+      <find>kafkaProducerListener</find>
+      <find>spring-boot-starter</find>
+      <find>thymeleaf</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/processes/demo2.bpmn" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/app.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/workplan/WP_DEPARTMapper.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e7ac125b-f437-4b15-ad3a-cc54a7b2ace3/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/config/WorkPlanDataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/WorkPlanController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/supplement/shiro/AuthRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/activiti/index.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/mapper/activiti/SYS_PERMISSIONMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/model/activiti/USERS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/model/activiti/TB_QJ.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/activiti/TB_QJMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/util/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/util/PoiUtil.java" />
+        <option value="$PROJECT_DIR$/README.MD" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/activiti/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/workplan/position-add.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/activiti/add.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/PluginsAppForTomcat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/StudyForTomcat.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login/logout.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login/testGl.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/activiti/index.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/processes/qingjia.bpmn" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/activiti/ownWork.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/activiti/ownWork.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/service/activiti/ActivitiService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/service/activiti/impl/ActivitiServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/mapper/activiti/TB_QJMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/ActivitiController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/StudyHashmap.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/tpsc/tpscs.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/TpscController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/tpsc/tpsc.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/tpsc/tpscs.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/model/kafka/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/kafka/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/kafka/KafkaReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/kafka/KafkaSender.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dwc/web/study/StudyApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$PROJECT_DIR$/../../TOOLS/apache-maven-3.5.4/repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../TOOLS/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../TOOLS/apache-maven-3.5.4/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="war" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/src/main/resources/static/webgis/js/bootstrap-3.3.7-dist/plugins/bootstrap-timepicker/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="813" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaInjectionPointsAutowiringInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="putData&#9;null&#9;null&#10;templates//login&#9;FILE&#9;file:///Applications/workspace/study/src/main/resources/templates/login/login.html&#10;8089&#9;PSI&#9;JAVA://oracle.jdbc.proxy.oracle$1jdbc$1replay$1driver$1NonTxnReplayableResultSet$2oracle$1jdbc$1OracleResultSet$$$Proxy#methodObject18089&#10;SYS_ROLES&#9;FILE&#9;file:///Applications/workspace/study/src/com/dwc/web/study/model/psms/SYS_ROLES.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536655932889" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5241379" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/workplan" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dwc.web.study" />
+      <recent name="com.dwc.web.study.util" />
+      <recent name="com.dwc.web.study.model.activiti" />
+      <recent name="com.dwc.web.study.mapper.activiti" />
+      <recent name="com.dwc.web.study.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js/activiti" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/activiti" />
+      <recent name="$PROJECT_DIR$/src/main/resources/processes" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/css/activiti" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/login" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.21970803" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.StudyApplication">
+    <configuration name="StudyHashmap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dwc.web.study.controller.StudyHashmap" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwc.web.study.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TpscController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dwc.web.study.controller.TpscController" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwc.web.study.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivitiController.deploy (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwc.web.study.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwc.web.study.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dwc.web.study.controller.ActivitiController" />
+      <option name="METHOD_NAME" value="deploy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivitiController.deploy1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwc.web.study.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwc.web.study.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dwc.web.study.controller.ActivitiController" />
+      <option name="METHOD_NAME" value="deploy1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivitiController.startProcessInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwc.web.study.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwc.web.study.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dwc.web.study.controller.ActivitiController" />
+      <option name="METHOD_NAME" value="startProcessInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="study [mybatis-generator:generate]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.Demo1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SsmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.boot.ssm.demo.SsmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dwc.web.study.StudyApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.study [mybatis-generator:generate]" />
+      <item itemvalue="Spring Boot.StudyApplication" />
+      <item itemvalue="Spring Boot.SsmApplication" />
+      <item itemvalue="Spring Boot.Demo1Application" />
+      <item itemvalue="JUnit.ActivitiController.deploy (1)" />
+      <item itemvalue="JUnit.ActivitiController.deploy1" />
+      <item itemvalue="JUnit.ActivitiController.startProcessInstance" />
+      <item itemvalue="Application.StudyHashmap" />
+      <item itemvalue="Application.TpscController" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TpscController" />
+        <item itemvalue="Application.StudyHashmap" />
+        <item itemvalue="JUnit.ActivitiController.startProcessInstance" />
+        <item itemvalue="JUnit.ActivitiController.deploy1" />
+        <item itemvalue="JUnit.ActivitiController.deploy (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1766f2c-d81a-4dc6-97df-28b627d58524" name="Default Changelist" comment="" />
+      <created>1534588960487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534588960487</updated>
+      <workItem from="1534588964816" duration="2860000" />
+      <workItem from="1534595807856" duration="7596000" />
+      <workItem from="1534645366502" duration="4978000" />
+      <workItem from="1534671376471" duration="6162000" />
+      <workItem from="1534738175040" duration="350000" />
+      <workItem from="1534744702304" duration="3919000" />
+      <workItem from="1534748900587" duration="8836000" />
+      <workItem from="1534767802350" duration="8453000" />
+      <workItem from="1534780117485" duration="702000" />
+      <workItem from="1534814435622" duration="1473000" />
+      <workItem from="1534816860476" duration="6128000" />
+      <workItem from="1534832586837" duration="141000" />
+      <workItem from="1534832756123" duration="395000" />
+      <workItem from="1534833195098" duration="41000" />
+      <workItem from="1534833257888" duration="454000" />
+      <workItem from="1534833737500" duration="302000" />
+      <workItem from="1534834061734" duration="148000" />
+      <workItem from="1534834269524" duration="5468000" />
+      <workItem from="1534913296727" duration="41000" />
+      <workItem from="1534913346889" duration="6272000" />
+      <workItem from="1534922710623" duration="17000" />
+      <workItem from="1534923698142" duration="414000" />
+      <workItem from="1534990232721" duration="6827000" />
+      <workItem from="1535040021295" duration="633000" />
+      <workItem from="1535073178086" duration="15647000" />
+      <workItem from="1535176787895" duration="5157000" />
+      <workItem from="1535202434951" duration="298000" />
+      <workItem from="1535209040963" duration="2502000" />
+      <workItem from="1535334933272" duration="14252000" />
+      <workItem from="1535448511780" duration="1337000" />
+      <workItem from="1535505227313" duration="6298000" />
+      <workItem from="1535561262611" duration="544000" />
+      <workItem from="1535597933111" duration="607000" />
+      <workItem from="1535694572186" duration="13493000" />
+      <workItem from="1536542870161" duration="4713000" />
+      <workItem from="1536563171781" duration="1192000" />
+      <workItem from="1536636049519" duration="9818000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ActivitiController_deploy_(1) - 2018.08.24 at 16h 25m 16s.xml">
+      <configuration name="ActivitiController.deploy (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiController_deploy_(1) - 2018.08.24 at 16h 29m 13s.xml">
+      <configuration name="ActivitiController.deploy (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiController_deploy_(1) - 2018.08.24 at 16h 29m 34s.xml">
+      <configuration name="ActivitiController.deploy (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiController_deploy_(1) - 2018.08.24 at 16h 30m 14s.xml">
+      <configuration name="ActivitiController.deploy (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiController_deploy_(1) - 2018.08.24 at 16h 31m 06s.xml">
+      <configuration name="ActivitiController.deploy (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiController_deploy1 - 2018.08.24 at 16h 32m 55s.xml">
+      <configuration name="ActivitiController.deploy1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiController_deploy1 - 2018.08.24 at 16h 36m 18s.xml">
+      <configuration name="ActivitiController.deploy1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiController_deploy1 - 2018.08.24 at 16h 37m 27s.xml">
+      <configuration name="ActivitiController.deploy1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiController_deploy1 - 2018.08.24 at 16h 37m 49s.xml">
+      <configuration name="ActivitiController.deploy1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiController_startProcessInstance - 2018.08.24 at 16h 41m 57s.xml">
+      <configuration name="ActivitiController.startProcessInstance" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="148468000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="813" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Favorites" order="2" sideWeight="0.50277776" side_tool="true" weight="0.27825466" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Web" order="4" sideWeight="0.50277776" side_tool="true" weight="0.27825466" />
+      <window_info id="Designer" order="5" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49722221" visible="true" weight="0.3125894" />
+      <window_info id="Structure" order="7" sideWeight="0.50277776" side_tool="true" weight="0.27825466" />
+      <window_info id="BPMN Editor" order="8" weight="0.31759655" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.33287102" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.34119278" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32959327" />
+      <window_info anchor="bottom" id="Database Changes" order="4" weight="0.32959327" />
+      <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="6" weight="0.32959327" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32911393" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.30651873" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.23855756" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32916668" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.30790567" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.18218623" />
+      <window_info anchor="right" id="Database" order="2" weight="0.19456366" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" weight="0.32998326" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Preview" order="10" />
+      <window_info anchor="right" id="BPMN Palette" order="11" visible="true" weight="0.15307583" />
+      <window_info anchor="right" x="602" y="156" width="236" height="547" id="BPMNPalette" order="12" weight="0.21387696" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/TpscController.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="17065" column="17" selection-start-line="17065" selection-start-column="17" selection-end-line="17065" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/activiti/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/workplan/position-add.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/StudyForTomcat.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/supplement/shiro/AuthRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../TOOLS/apache-maven-3.5.4/repository/org/springframework/spring-core/5.0.8.RELEASE/spring-core-5.0.8.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/testGl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+          <folding>
+            <element signature="e#2260#2261#0" expanded="true" />
+            <element signature="e#2298#2299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../TOOLS/apache-maven-3.5.4/repository/org/activiti/activiti-engine/5.22.0/activiti-engine-5.22.0.jar!/org/activiti/engine/TaskService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/workplan/shift-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="80" column="13" lean-forward="true" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/workplan/zrq-work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="134" column="6" lean-forward="true" selection-start-line="118" selection-start-column="4" selection-end-line="134" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/processes/qingjia.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/processes/demo1.bpmn">
+      <provider selected="true" editor-type-id="bpmn-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/processes/demo2.bpmn">
+      <provider selected="true" editor-type-id="bpmn-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/util/result/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/util/result/ResultUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="470" column="4" selection-start-line="470" selection-start-column="4" selection-end-line="470" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/activiti/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="77" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/activiti/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/activiti/ownWork.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/mapper/activiti/TB_QJMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/activiti/ownWork.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/service/activiti/ActivitiService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/service/activiti/impl/ActivitiServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="1099" column="7" lean-forward="true" selection-start-line="1099" selection-start-column="7" selection-end-line="1099" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="374" column="14" selection-start-line="374" selection-start-column="14" selection-end-line="374" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1149">
+          <caret line="278" column="17" selection-start-line="278" selection-start-column="17" selection-end-line="278" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/StudyHashmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/processes/qingjia.bpmn">
+      <provider selected="true" editor-type-id="bpmn-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qingjia.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/WorkPlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tpsc/tpscs.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-890">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/TpscController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#1923#1924#0" expanded="true" />
+            <element signature="e#1958#1959#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tpsc/tpsc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tpsc/tpscs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="73" lean-forward="true" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/controller/ActivitiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="130" column="45" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/kafka/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/StudyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/kafka/KafkaReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dwc/web/study/kafka/KafkaSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>study:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5241379" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5241379" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5241379" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>study</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-core:2.9.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5241379" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

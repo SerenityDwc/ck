@@ -1,0 +1,83 @@
+####编码路径Thymeleaf设置
+spring:
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  messages:
+    encoding: utf-8
+  thymeleaf:
+    encoding: utf-8
+    cache: false
+    mode: LEGACYHTML5
+  datasource:
+    #多数据源配置
+    druid:
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1 from dual
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      useGlobalDataSourceStat: true
+      aop-patterns: packages
+  activiti:
+    check-process-definitions: false
+  #限制上传文件的大小
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+  #配置kafka
+  kafka:
+    # 指定kafka 代理地址，可以多个
+    bootstrap-servers: localhost:9092
+    #=============== provider  =======================
+    producer:
+      retries: 0
+      # 每次批量发送消息的数量
+      batch-size: 16384
+      buffer-memory: 33554432
+      # 指定消息key和消息体的编解码方式
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    #=============== consumer  =======================
+    # 指定默认消费者group id
+    consumer:
+      group-id: test-consumer-group
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+mybatis:
+  configuration:
+    call-setters-on-nulls: true
+#pagehelper分页插件
+pagehelper:
+  helperDialect: oracle
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+server:
+  port: 8088
+  servlet:
+    context-path: "/study"
+
+
+
+
+
+
+

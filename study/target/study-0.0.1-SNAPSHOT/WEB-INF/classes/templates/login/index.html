@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>Test成功登陆后进入的页面</title>
+
+    <link th:href="@{/bootstrap/theme/materia/bootstrap.min.css}" href="../static/bootstrap/theme/materia/bootstrap.min.css" rel="stylesheet"/>
+    <link th:href="@{/css/layout.css}" href="../static/css/layout.css" rel="stylesheet"/>
+    <link th:href="@{/css/index.css}" href="../static/css/index.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Test成功登陆后进入的页面</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="feature.html">特色</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">关于</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" placeholder="请输入查找内容..." type="text"/>
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">搜索</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container mt-2 mb-5">
+        <div class="row">
+            <div class="col-md-3" shiro:hasPermission="user:add">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{img/workplan/workplan.png}" alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">add工作排班 <span class="badge badge-danger">开发中</span></h4>
+                        <p class="card-text">旨在快速排班工作计划，高效快捷的完成计划安排，直观的阅览排班情况</p>
+                        <a href="activiti/qjlb" class="btn btn-primary install" name="workplan">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" shiro:hasPermission="user:update">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/database/database.png}" src="../../../static/img/database/database.png" alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">update数据中心(DB版) <span class="badge badge-primary">移植中</span></h4>
+                        <p class="card-text">模块插件描述<br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/api/api.png}" src="../../static/img/api/api.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">数据中心(Ws版)</h4>
+                        <p class="card-text">模块插件描述<br></br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/holiday/holiday.png}" src="../../static/img/holiday/holiday.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">请假审批</h4>
+                        <p class="card-text">模块插件描述<br></br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/sso/sso.png}" src="../../static/img/sso/sso.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">单点登录 <span class="badge badge-danger">开发中</span></h4>
+                        <p class="card-text">基于一套用户认证系统,统一管理APP，WEB多个平台之间的权限认证</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/map/map.png}" src="../../static/img/map/map.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">高德地图(离线版)</h4>
+                        <p class="card-text">模块插件描述<br></br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/dataview/dataview.png}" src="../../static/img/dataview/dataview.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">大屏可视化</h4>
+                        <p class="card-text">模块插件描述<br></br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/demo/demo.png}" src="../../static/img/demo/demo.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">精华小栗子</h4>
+                        <p class="card-text">模块插件描述<br></br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/wwdx.png}" src="../../static/img/wwdx.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">未完待续</h4>
+                        <p class="card-text">模块插件描述<br></br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/wwdx.png}" src="../../static/img/wwdx.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">未完待续</h4>
+                        <p class="card-text">模块插件描述<br></br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/wwdx.png}" src="../../static/img/wwdx.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">未完待续</h4>
+                        <p class="card-text">模块插件描述<br></br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{./img/wwdx.png}" src="../../static/img/wwdx.png"  alt="workplan"/>
+                    <div class="card-body">
+                        <h4 class="card-title">未完待续</h4>
+                        <p class="card-text">模块插件描述<br></br>模块插件描述</p>
+                        <a href="#" class="btn btn-primary disabled">安  装</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:include="layout/footer :: copy" class="fixed-bottom text-center footer">
+        <p style="line-height: 15px;">版权所有 © 苏州广立信息技术有限公司 @Author LancCJ</p>
+    </div>
+
+    <script th:src="@{/jquery/3.2.1/jquery.slim.min.js}" src="../static/jquery/3.2.1/jquery.slim.min.js"></script>
+    <script th:src="@{/bootstrap/js/popper.min.js}" src="../static/bootstrap/js/popper.min.js"></script>
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}" src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script th:src="@{/js/index.js}" src="../static/js/index.js"></script>
+</body>
+</html>

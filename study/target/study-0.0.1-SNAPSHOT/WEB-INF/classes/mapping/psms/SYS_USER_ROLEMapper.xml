@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwc.web.study.mapper.psms.SYS_USER_ROLEMapper" >
+  <resultMap id="BaseResultMap" type="com.dwc.web.study.model.psms.SYS_USER_ROLE" >
+    <id column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="N_USERID" property="nUserid" jdbcType="VARCHAR" />
+    <result column="N_ROLEID" property="nRoleid" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, N_USERID, N_ROLEID
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from SYS_USER_ROLE
+    where ID = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from SYS_USER_ROLE
+    where ID = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.dwc.web.study.model.psms.SYS_USER_ROLE" >
+    insert into SYS_USER_ROLE (ID, N_USERID, N_ROLEID
+      )
+    values (#{id,jdbcType=VARCHAR}, #{nUserid,jdbcType=VARCHAR}, #{nRoleid,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dwc.web.study.model.psms.SYS_USER_ROLE" >
+    insert into SYS_USER_ROLE
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="nUserid != null" >
+        N_USERID,
+      </if>
+      <if test="nRoleid != null" >
+        N_ROLEID,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="nUserid != null" >
+        #{nUserid,jdbcType=VARCHAR},
+      </if>
+      <if test="nRoleid != null" >
+        #{nRoleid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dwc.web.study.model.psms.SYS_USER_ROLE" >
+    update SYS_USER_ROLE
+    <set >
+      <if test="nUserid != null" >
+        N_USERID = #{nUserid,jdbcType=VARCHAR},
+      </if>
+      <if test="nRoleid != null" >
+        N_ROLEID = #{nRoleid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dwc.web.study.model.psms.SYS_USER_ROLE" >
+    update SYS_USER_ROLE
+    set N_USERID = #{nUserid,jdbcType=VARCHAR},
+      N_ROLEID = #{nRoleid,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

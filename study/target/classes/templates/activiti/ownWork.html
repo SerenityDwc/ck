@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>请假审批</title>
+    <link th:href="@{/bootstrap/theme/materia/bootstrap.min.css}"
+          href="../../static/bootstrap/theme/materia/bootstrap.min.css" rel="stylesheet"/>
+    <link th:href="@{/bootstrap/plugin/table/bootstrap-table.min.css}"
+          href="../../static/bootstrap/plugin/table/bootstrap-table.min.css" rel="stylesheet"/>
+    <link th:href="@{/ztree/css/metroStyle/metroStyle.css}" href="../../static/ztree/css/metroStyle/metroStyle.css"
+          rel="stylesheet"/>
+    <link th:href="@{/layui/css/layui.css}" href="../../static/layui/css/layui.css" rel="stylesheet"/>
+
+    <link th:href="@{/css/activiti/index.css}" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">我的工作审批</a>
+</nav>
+
+<div class="main">
+    <div class="main_right">
+
+        <div id="toolbar" class="mb-1 mt-1">
+
+            <div class="row">
+                <div class="col-12" style="display: flex;flex-direction: row-reverse">
+                    <div style="display: flex;flex-direction: row;justify-content: space-around">
+                        <button class="layui-btn layui-btn-normal" id="search">查询</button>
+                        <button class="layui-btn layui-btn-warm" id="export">数据导出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table id="table" >
+        </table>
+
+    </div>
+</div>
+
+<div th:include="layout/footer :: copy" class="fixed-bottom text-center footer">
+    <p style="line-height: 15px;">版权所有 © 苏州广立信息技术有限公司 @Author LancCJ</p>
+</div>
+
+
+<script th:src="@{/fullcalendar/3.8/lib/jquery.min.js}" src="../../static/fullcalendar/3.8/lib/jquery.min.js"></script>
+<script th:src="@{/fullcalendar/3.8/lib/moment.min.js}" src="../../static/fullcalendar/3.8/lib/moment.min.js"></script>
+<script th:src="@{/bootstrap/js/bootstrap.min.js}" src="../../static/bootstrap/js/bootstrap.min.js"></script>
+<script th:src="@{/bootstrap/plugin/table/bootstrap-table.min.js}"
+        src="../../static/bootstrap/plugin/table/bootstrap-table.min.js"></script>
+<script th:src="@{/bootstrap/plugin/table/locale/bootstrap-table-zh-CN.min.js}"
+        src="../../static/bootstrap/plugin/table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script th:src="@{/bootstrap/plugin/table/extensions/export/bootstrap-table-export.min.js}"
+        src="../../static/bootstrap/plugin/table/extensions/export/bootstrap-table-export.min.js"></script>
+<script th:src="@{/ztree/js/jquery.ztree.all.min.js}" src="../../static/ztree/js/jquery.ztree.all.min.js"></script>
+<script th:src="@{/layui/layui.all.js}" src="../../static/layui/layui.all.js"></script>
+<script th:src="@{/layer/layer.js}" src="../../static/layer/layer.js"></script>
+<script th:src="@{/js/app.js}" src="../../static/js/app.js"></script>
+<script th:src="@{/js/util.js}" src="../../static/js/util.js"></script>
+<script th:src="@{/js/trans.js}" src="../../static/js/trans.js"></script>
+<script th:src="@{/js/activiti/ownWork.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwc.web.study.mapper.psms.SYS_ROLESMapper" >
+  <resultMap id="BaseResultMap" type="com.dwc.web.study.model.psms.SYS_ROLES" >
+    <id column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="C_ROLENAME" property="cRolename" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, C_ROLENAME
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from SYS_ROLES
+    where ID = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from SYS_ROLES
+    where ID = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.dwc.web.study.model.psms.SYS_ROLES" >
+    insert into SYS_ROLES (ID, C_ROLENAME)
+    values (#{id,jdbcType=VARCHAR}, #{cRolename,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dwc.web.study.model.psms.SYS_ROLES" >
+    insert into SYS_ROLES
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="cRolename != null" >
+        C_ROLENAME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="cRolename != null" >
+        #{cRolename,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dwc.web.study.model.psms.SYS_ROLES" >
+    update SYS_ROLES
+    <set >
+      <if test="cRolename != null" >
+        C_ROLENAME = #{cRolename,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dwc.web.study.model.psms.SYS_ROLES" >
+    update SYS_ROLES
+    set C_ROLENAME = #{cRolename,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>
