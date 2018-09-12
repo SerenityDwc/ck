@@ -1,2 +1,0 @@
-i am a student
-我做了修改，测试git能不能获取到
